@@ -1,0 +1,20 @@
+.lake/
+.DS_Store
+*.olean
+*.ilean
+
+# Manuscript and generated files
+*.tex
+*.bib
+*.pdf
+*.aux
+*.bbl
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.synctex.gz
+
+# Internal formalization instructions
+AGENTS*.md

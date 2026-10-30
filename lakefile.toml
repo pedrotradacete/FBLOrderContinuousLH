@@ -1,0 +1,16 @@
+name = "fblOrderContinuousLH"
+version = "0.1.0"
+defaultTargets = ["FBLOrderContinuousLH"]
+
+[leanOptions]
+autoImplicit = false
+
+[[require]]
+name = "banLat"
+git = "https://github.com/davidmunozlahoz/banlat"
+rev = "33c4b73fce845c4295614326193d4e52111be762"
+
+[[lean_lib]]
+name = "FBLOrderContinuousLH"
+# Match BanLat's support for files without a module-system header.
+allowNonModules = true
