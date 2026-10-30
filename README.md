@@ -32,6 +32,17 @@ Verification of these Lean sources on 30 October 2026 found no build warnings or
 errors, and the audit passed for all **1,274 project declarations**, including
 private and generated helpers.
 
+## Automated verification
+
+The [Lean verification workflow](.github/workflows/lean.yml) runs on pushes to
+`main`, pull requests targeting `main`, and manual runs from the Actions tab.
+It installs the pinned toolchain, fetches the Mathlib cache, builds the project,
+and runs the proof audit. Both the build and audit must pass for the
+**Lean build and audit** check to succeed.
+
+After its first successful run, select **Lean build and audit** as a required
+status check in the branch protection rules for `main`.
+
 ## Dependencies
 
 | Component | Pinned version |
